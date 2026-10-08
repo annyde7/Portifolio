@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anny | Desenvolvedora Full Stack</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f3eefb;--card:#fbf9ff;--text:#2a2236;--muted:#6b5f7e;--line:#ddd2ef;--accent:#7c4dbd;--accent-bg:#e6dbf7}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17131f;--card:#1f1a2b;--text:#efeaf8;--muted:#a79bbd;--line:#322a45;--accent:#c4a5f5;--accent-bg:#2d2342}}
+:root[data-theme="dark"]{--bg:#17131f;--card:#1f1a2b;--text:#efeaf8;--muted:#a79bbd;--line:#322a45;--accent:#c4a5f5;--accent-bg:#2d2342}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+nav{display:flex;gap:18px;justify-content:flex-end;padding:20px 0;font-size:14px}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent)}
+header{padding:48px 0 32px}
+.tag{display:inline-block;background:var(--accent-bg);color:var(--accent);font:600 13px/1 ui-monospace,Menlo,monospace;padding:7px 12px;border-radius:99px}
+h1{font-size:clamp(34px,7vw,56px);line-height:1.1;margin:18px 0 12px;letter-spacing:-.02em}
+.lead{font-size:19px;color:var(--muted);max-width:620px;margin:0 0 24px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--text)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+section{padding:36px 0;border-top:1px solid var(--line)}
+h2{display:flex;align-items:center;gap:10px;font-size:14px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 20px;font-family:ui-monospace,Menlo,monospace}
+h2 svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0 0 14px;color:var(--muted);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:13px ui-monospace,Menlo,monospace;background:var(--accent-bg);color:var(--accent);padding:4px 10px;border-radius:6px}
+.card a{color:var(--accent);font-weight:600;font-size:14px;text-decoration:none}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skills .chip{font-size:14px;padding:8px 14px;background:var(--card);border:1px solid var(--line);color:var(--text)}
+.job{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.job b{display:block}.job span{color:var(--muted);font-size:14px}
+footer{padding:36px 0 56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="#projetos">Projetos</a><a href="#skills">Skills</a><a href="#experiencia">Formação</a><a href="#contato">Contato</a></nav>
+
+<header>
+<span class="tag">&lt;full stack em formação /&gt;</span>
+<h1>Olá, eu sou<br>Anny.</h1>
+<p class="lead">Estudante de Sistemas de Informação na Universidade do Acre e aluna do curso Full Stack do WebAcademy, projeto da Motorola. Construo aplicações web do front-end ao back-end e estou em busca de estágio e primeiras oportunidades na área.</p>
+<div class="btns"><a class="btn main" href="#projetos">Ver projetos</a><a class="btn" href="#contato">Falar comigo</a></div>
+</header>
+
+<section id="projetos">
+<h2><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>projetos</h2>
+<div class="grid">
+<div class="card"><h3>Nome do Projeto 1</h3><p>Em uma frase: qual problema resolve e qual foi o seu papel. Se tiver número de impacto, coloque aqui.</p><div class="chips"><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">PostgreSQL</span></div><p style="margin:14px 0 0"><a href="https://github.com/annyde7">Código ↗</a> &nbsp; <a href="#">Demo ↗</a></p></div>
+<div class="card"><h3>Nome do Projeto 2</h3><p>Descreva o desafio técnico mais interessante e como você o resolveu.</p><div class="chips"><span class="chip">Python</span><span class="chip">API REST</span><span class="chip">Docker</span></div><p style="margin:14px 0 0"><a href="https://github.com/annyde7">Código ↗</a></p></div>
+<div class="card"><h3>Nome do Projeto 3</h3><p>Pode ser um projeto pessoal, de estudo ou open source. O que importa é mostrar como você pensa.</p><div class="chips"><span class="chip">TypeScript</span><span class="chip">Next.js</span></div><p style="margin:14px 0 0"><a href="https://github.com/annyde7">Código ↗</a> &nbsp; <a href="#">Demo ↗</a></p></div>
+</div>
+</section>
+
+<section id="skills">
+<h2><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>skills</h2>
+<div class="skills"><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">SQL</span><span class="chip">Git</span><span class="chip">Docker</span><span class="chip">Testes automatizados</span></div>
+</section>
+
+<section id="experiencia">
+<h2><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>formação</h2>
+<div class="job"><div><b>Curso Full Stack · WebAcademy (Motorola)</b><span>Desenvolvimento web completo, do front-end ao back-end.</span></div><span>em andamento</span></div>
+<div class="job"><div><b>Sistemas de Informação · Universidade do Acre</b><span>Atualmente no 5º período.</span></div><span>em andamento</span></div>
+<div class="job"><div><b>Experiência / estágio</b><span>Adicione aqui, se tiver, ou remova este bloco.</span></div><span>—</span></div>
+</section>
+
+<section id="contato">
+<h2><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>contato</h2>
+<p class="lead" style="font-size:17px">Quer conversar sobre estágio, vaga ou projeto? Me escreva.</p>
+<div class="btns"><a class="btn main" href="mailto:anny21376@gmail.com">anny21376@gmail.com</a><a class="btn" href="https://github.com/annyde7">GitHub</a></div>
+</section>
+
+<footer>© <span id="y"></span> Anny. Feito à mão com HTML e CSS.</footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
